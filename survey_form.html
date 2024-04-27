@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Haru's Survey Form</title>
+    <link rel="stylesheet" href="survey_form.css" />
+</head>
+
+<body>
+    <header>
+        <h1 id='title'>Foreigners' Living Experience In The Philippines Survey Form</h1>
+        <p id='description'>We appreciate you for taking our survey form!</p>
+    </header>
+
+    <main>
+        <form id='survey-form'>
+            <section class="first-section">
+                <label id="name-label">Name: <input placeholder="Enter your name" id="name" name='name' type="text"
+                        required /></label>
+                <br>
+                <br>
+                <label id='email-label'>Email: <input placeholder='Enter your email' id='email' type='email'
+                        name="email" required /></label>
+                <br>
+                <br>
+                <label id='number-label'>Age: <input placeholder='Age' id='number' name='age' type='number' min='13'
+                        max='120' required />
+            </section>
+            <hr>
+            <section>
+                <label for='dropdown'>How many years did you live in the Philippines?
+                    <br>
+                    <br>
+                    <select class="dropd" id='dropdown' name='dropdown' required>
+                        <option value="">Select an option</option>
+                        <option value="1">A year</option>
+                        <option value="2">2-7 years</option>
+                        <option value="3">8-10 years or more</option>
+                    </select></label>
+            </section>
+            <hr>
+            <section>
+                <label>Would you recommend Philippines to a friend?</label>
+                <br>
+                <br>
+                <label for='yes'><input id='yes' name='answer' type='radio' class='inline' value='yes' required />
+                    Yes</label>
+                <br>
+                <br>
+                <label for='no'><input id='no' name='answer' type='radio' class='inline' value='no' required />
+                    No</label>
+                <br>
+                <br>
+                <label for='maybe'><input id='maybe' name='answer' type='radio' class='inline' value='maybe' required />
+                    Maybe</label>
+            </section>
+            <hr>
+            <section>
+                <label for='dropdown'>Why did you choose the Philippines?
+                    <br>
+                    <br>
+                    <select class="dropd" id='dropdown' name='dropdown' required>
+                        <option value="">Select an option</option>
+                        <option value="1">Cheap</option>
+                        <option value="2">Hot</option>Beautiful beaches<option value="3">Hospitality</option>
+                        <option value="4">Other</option>
+                    </select></label>
+            </section>
+            <hr>
+            <section>
+                <label>Did you visit these places in the Philippines? (Check all that apply)</label>
+                <br>
+                <br>
+                <label for='puerto-prinsesa'><input value="puerto-prinsesa" id='puerto-prinsesa' name='answers'
+                        type='checkbox' class='inline' /> Puerto Prinsesa</label>
+                <br>
+                <br>
+                <label for='boracay'>
+                    <input value="boracay" id='boracay' name='answers' type='checkbox' class='inline' /> Boracay</label>
+                <br>
+                <br>
+                <label for='cebu-city'><input value="cecu-city" id='cebu-city' name='answers' type='checkbox'
+                        class='inline' /> Cebu City</label>
+                <br>
+                <br>
+                <label for='intramuros'><input value="intramuros" id='intramuros' name='answers' type='checkbox'
+                        class='inline' /> Intramuros</label>
+            </section>
+            <hr>
+            <section>
+                <label for='comments and suggestion'>What are your comments about the Philippines?
+                    <br>
+                    <br>
+                    <textarea placeholder='Enter your comment here...' id='comments and suggestions'
+                        name='comments ad suggestions' rows='5' cols='35'></textarea></label>
+                <br>
+                <br>
+                <input id="submit" type="submit" value="Submit" />
+            </section>
+        </form>
+    </main>
+</body>
+
+</html>
